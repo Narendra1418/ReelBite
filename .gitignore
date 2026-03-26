@@ -7,14 +7,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+.env
+
+
+#Frontend + Reel Service
+node_modules/
 dist
 dist-ssr
 *.local
 
+
 #Java / Spring Boot
+# Maven / Gradle build output
 target/
+build/
 *.log 
+
+# Ignore all service build folders inside backend
+backend/*/target/
+backend/*/build/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -25,3 +37,14 @@ target/
 *.njsproj
 *.sln
 *.sw?
+
+
+
+# ======================
+# Misc
+# ======================
+*.class
+*.jar
+*.war
+*.ear
+*.swp
